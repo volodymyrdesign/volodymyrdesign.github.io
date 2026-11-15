@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art &amp; Design by Volodymyr Voronkin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="head">
+    <img class="avatar" src="images/avatar.png" alt="Volodymyr Voronkin" onerror="this.style.visibility='hidden'">
+    <h1>Art &amp; Design <span class="by">by</span><br>Volodymyr Voronkin</h1>
+  </div>
+</header>
+
+<main id="sections"></main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lb-title">
+  <div class="lb-bar">
+    <div><h3 id="lb-title"></h3><p id="lb-desc"></p></div>
+    <div class="lb-ctl">
+      <button id="lb-prev" aria-label="Previous work">&#8249;</button>
+      <button id="lb-next" aria-label="Next work">&#8250;</button>
+      <button id="lb-close" aria-label="Close">&#10005;</button>
+    </div>
+  </div>
+  <div class="lb-scroll" id="lb-scroll"></div>
+</div>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
